@@ -1,0 +1,14 @@
+   
+
+.addTodo {
+    margin-top: 20px;
+}
+.editPopup {
+    opacity: 0;
+    transition: all .2s ease;
+    pointer-events: none;
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

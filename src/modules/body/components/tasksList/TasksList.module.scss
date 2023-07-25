@@ -1,0 +1,16 @@
+.points {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+.point {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, .4);
+}
+.text {
+    text-align: center;
+    color: rgba(128, 128, 128, .8);
+}

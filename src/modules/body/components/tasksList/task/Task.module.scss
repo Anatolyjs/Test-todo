@@ -1,0 +1,59 @@
+.task {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.buttonsPart {
+    display: flex;
+}
+.textPart {
+    display: flex;
+    align-items: center;
+}
+.deleteBtn, .editBtn {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .2s ease;
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.deleteBtn {
+    margin-left: 15px;
+}
+
+.checkBtn {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(178, 196, 220);
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+        content: '';
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color:rgb(246, 146, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    &.completed {
+        &::after {
+            display: block;
+        }
+    }
+}
